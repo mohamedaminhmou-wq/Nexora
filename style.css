@@ -1,87 +1,46 @@
 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
 }
 
-body {
-  background: #f5f7fb;
-  color: #222;
+nav{
+    background:#1e293b;
+    padding:20px;
 }
 
-header {
-  background: #111827;
-  color: white;
-  padding: 20px;
-  text-align: center;
+nav h2{
+    display:inline;
+    color:#38bdf8;
+    margin-right:30px;
 }
 
-header h1 {
-  font-size: 40px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
 }
 
-nav {
-  margin-top: 15px;
+section{
+    text-align:center;
+    padding:100px 20px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+h1{
+    font-size:50px;
 }
 
-.hero {
-  text-align: center;
-  padding: 80px 20px;
+p{
+    font-size:22px;
 }
 
-.hero h2 {
-  font-size: 45px;
-  margin-bottom: 20px;
+button{
+    background:#38bdf8;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:20px;
 }
-
-.hero p {
-  font-size: 20px;
-  color: #555;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 25px;
-  background: #2563eb;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-.skills {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  width: 250px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px #ddd;
-}
-
-footer {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-  background: #111827;
-  color: white;
-}
-
-<link rel="stylesheet" href="style.css">
