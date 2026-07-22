@@ -26,3 +26,13 @@ function checkAnswer() {
         document.getElementById("result").innerHTML = "❌ Try Again!";
     }
 }
+localStorage.setItem("score", 0);
+localStorage.setItem("lessons", 0);
+
+function updateProfile() {
+    document.getElementById("score").innerHTML =
+        localStorage.getItem("score");
+
+    document.getElementById("lessons").innerHTML =
+        localStorage.getItem("lessons");
+}
