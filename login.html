@@ -9,33 +9,34 @@
 <body>
 
 <nav class="navbar">
-    <h2>🚀 Nexora</h2>
+    <h2 class="logo">🚀 Nexora</h2>
 
     <div>
         <a href="index.html">Home</a>
-        <a href="english.html">English</a>
-        <a href="programming.html">Programming</a>
-        <a href="ai.html">AI</a>
+        <a href="courses.html">Courses</a>
+        <a href="signup.html">Sign Up</a>
     </div>
 </nav>
 
 <section class="login">
 
-    <h1>Login</h1>
+    <h1>🔐 Login</h1>
 
-    <input type="email" placeholder="Email">
-
-    <br><br>
-
-    <input type="password" placeholder="Password">
+    <input type="email" id="email" placeholder="Enter your email">
 
     <br><br>
 
-    <button>Login</button>
-<p>Don't have an account?</p>
+    <input type="password" id="password" placeholder="Enter your password">
 
-<a href="signup.html">Create Account</a>
+    <br><br>
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMessage"></p>
+
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
