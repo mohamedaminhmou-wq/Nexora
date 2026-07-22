@@ -274,3 +274,14 @@ footer{
     font-size:20px;
     margin:10px 0;
 }
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card button{
+    width:100%;
+}
