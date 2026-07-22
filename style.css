@@ -91,3 +91,12 @@ footer{
     padding:20px;
     margin-top:60px;
 }
+.courses{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.courses h2{
+    color:#38bdf8;
+    margin-bottom:30px;
+}
