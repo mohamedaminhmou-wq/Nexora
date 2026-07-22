@@ -83,3 +83,21 @@ function updateProgress(){
     }
 
 }
+function login() {
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(email === "" || password === ""){
+
+        document.getElementById("loginMessage").innerHTML =
+        "❌ Please fill all fields.";
+
+    }else{
+
+        document.getElementById("loginMessage").innerHTML =
+        "✅ Login Successful!";
+
+    }
+
+}
