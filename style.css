@@ -170,3 +170,12 @@ footer{
 .stat p{
     color:white;
 }
+.testimonials{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.testimonials h2{
+    color:#38bdf8;
+    margin-bottom:30px;
+}
