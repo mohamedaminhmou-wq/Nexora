@@ -179,3 +179,22 @@ footer{
     color:#38bdf8;
     margin-bottom:30px;
 }
+.contact{
+    text-align:center;
+    padding:60px 20px;
+    background:#0f172a;
+}
+
+.contact h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.contact button{
+    background:#38bdf8;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:25px;
+    cursor:pointer;
+}
