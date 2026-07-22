@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Nexora</title>
+    <title>My Profile - Nexora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar">
-    <h2>🚀 Nexora</h2>
+    <h2 class="logo">🚀 Nexora</h2>
 
     <div>
         <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
         <a href="english.html">English</a>
         <a href="programming.html">Programming</a>
         <a href="ai.html">AI</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
     </div>
 </nav>
 
 <section class="profile">
 
-    <h1>My Profile</h1>
+    <h1>👤 My Profile</h1>
 
     <p><strong>Name:</strong> Mohamed Amin</p>
-    <p><strong>Completed Lessons:</strong> 1</p>
-    <p><strong>Score:</strong> 1</p>
+
+    <p><strong>Completed Lessons:</strong>
+        <span id="lessons">0</span>
+    </p>
+
+    <p><strong>Score:</strong>
+        <span id="score">0</span>
+    </p>
+
+    <br>
+
+    <a href="courses.html">
+        <button>Continue Learning</button>
+    </a>
 
 </section>
+
+<script src="script.js"></script>
+
+<script>
+if (typeof updateProfile === "function") {
+    updateProfile();
+}
+</script>
 
 </body>
 </html>
