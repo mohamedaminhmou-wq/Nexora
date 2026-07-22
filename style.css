@@ -84,3 +84,10 @@ ddd;
     margin:auto;
     font-size:20px;
 }
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
