@@ -3,6 +3,12 @@ function finishLesson() {function finishLesson() {
 }
     alert("🎉 Congratulations! You finished Lesson 1.");
 }function checkAnswer() {
+ let score = 0;
+
+function addPoint() {
+    score++;
+    document.getElementById("score").innerHTML = "Score: " + score;
+}
     let answer = document.getElementById("answer").value;
 
     if (answer === "26") {
