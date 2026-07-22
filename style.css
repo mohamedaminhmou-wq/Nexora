@@ -244,3 +244,18 @@ footer{
 .card button:hover{
     background:#0284c7;
 }
+.lesson{
+    max-width:800px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.lesson h1,
+.lesson h2{
+    color:#38bdf8;
+}
+
+.lesson ul{
+    text-align:left;
+    display:inline-block;
+}
