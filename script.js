@@ -1,4 +1,6 @@
-function finishLesson() {
+function finishLesson() {function finishLesson() {
+    alert("🎉 Congratulations! You finished Lesson 1.");
+}
     alert("🎉 Congratulations! You finished Lesson 1.");
 }
 function checkAnswer() {
