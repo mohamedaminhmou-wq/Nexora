@@ -149,3 +149,24 @@ footer{
     font-size:20px;
     cursor:pointer;
 }
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:60px 20px;
+    background:#111827;
+    flex-wrap:wrap;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h2{
+    color:#38bdf8;
+    font-size:40px;
+}
+
+.stat p{
+    color:white;
+}
