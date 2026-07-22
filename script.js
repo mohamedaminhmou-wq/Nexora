@@ -1,38 +1,51 @@
-function finishLesson() {function finishLesson() {
-    alert("🎉 Congratulations! You finished Lesson 1.");
-}
-    alert("🎉 Congratulations! You finished Lesson 1.");
-}function checkAnswer() {
- let score = 0;
+// ===== Nexora JavaScript =====
 
-function addPoint() {
-    score++;
-    document.getElementById("score").innerHTML = "Score: " + score;
-}
-    let answer = document.getElementById("answer").value;
+// Score & Lessons
+let score = Number(localStorage.getItem("score")) || 0;
+let lessons = Number(localStorage.getItem("lessons")) || 0;
 
-    if (answer === "26") {
-        document.getElementById("result").innerHTML = "✅ Correct!";
-    } else {
-        document.getElementById("result").innerHTML = "❌ Try Again!";
-    }
+// Finish Lesson
+function finishLesson() {
+    lessons++;
+    localStorage.setItem("lessons", lessons);
+
+    alert("🎉 Congratulations! You finished the lesson!");
 }
+
+// Check Quiz Answer
 function checkAnswer() {
-    let answer = document.getElementById("answer").value;
+
+    const answer = document.getElementById("answer").value;
 
     if (answer === "26") {
-        document.getElementById("result").innerHTML = "✅ Correct!";
+
+        score++;
+        localStorage.setItem("score", score);
+
+        document.getElementById("result").innerHTML =
+        "✅ Correct!";
+
     } else {
-        document.getElementById("result").innerHTML = "❌ Try Again!";
+
+        document.getElementById("result").innerHTML =
+        "❌ Try Again!";
+
     }
+
 }
-localStorage.setItem("score", 0);
-localStorage.setItem("lessons", 0);
 
+// Update Profile
 function updateProfile() {
-    document.getElementById("score").innerHTML =
-        localStorage.getItem("score");
 
-    document.getElementById("lessons").innerHTML =
-        localStorage.getItem("lessons");
+    const scoreElement = document.getElementById("score");
+    const lessonsElement = document.getElementById("lessons");
+
+    if(scoreElement){
+        scoreElement.textContent = localStorage.getItem("score") || 0;
+    }
+
+    if(lessonsElement){
+        lessonsElement.textContent = localStorage.getItem("lessons") || 0;
+    }
+
 }
