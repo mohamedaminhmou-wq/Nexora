@@ -24,9 +24,11 @@ body{
     flex-wrap:wrap;
 }
 
-.logo{
-    font-size:30px;
-    margin-right:8px;
+..logo{
+    font-size:32px;
+    color:#38bdf8;
+    font-weight:bold;
+}
 }
 
 .navbar h2{
